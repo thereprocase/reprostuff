@@ -1,16 +1,16 @@
 # /reprostuff
 
-A Claude Code skill that checks your GitHub for new or updated Claude Code skills, compares them against what's installed locally, and offers to bring the good stuff home.
+A Claude Code skill built for [Repro](https://github.com/thereprocase). It checks Repro's GitHub for new or updated Claude Code skills, compares them against what's installed locally, and offers to bring the good stuff home.
 
 ## What It Does
 
 Run `/reprostuff` and it will:
 
-1. Scan a hardcoded GitHub account for repos that look like Claude Code skills
-2. Compare against your installed skills
-3. Show you what's new, what's changed, and what's current
+1. Scan Repro's GitHub account for repos that look like Claude Code skills
+2. Compare against locally installed skills
+3. Show what's new, what's changed, and what's current
 4. Offer to install or update anything interesting — with reasons, not just yes/no prompts
-5. Remember what it saw, so next time it only tells you what changed
+5. Remember what it saw, so next time it only reports what changed
 
 ## Output Format
 
@@ -33,11 +33,7 @@ mkdir -p ~/.claude/skills/reprostuff
 cp SKILL.md ~/.claude/skills/reprostuff/
 ```
 
-Then edit the GitHub account in `SKILL.md` to point at your own. It ships pointed at `thereprocase` because that's where it was born, but the whole point is that it's yours to aim wherever you want.
-
-## Configuration
-
-Open `SKILL.md` and change `thereprocase` to your GitHub username. That's it. Everything else adapts.
+This skill is hardcoded to Repro's GitHub account (`thereprocase`). It was built for one person and it knows who that person is.
 
 ## License
 

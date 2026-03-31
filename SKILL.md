@@ -1,18 +1,18 @@
-# Skill: /reprostuff — What Have You Been Up To?
+# Skill: /reprostuff — What Has Repro Been Up To?
 
-Rummage through [thereprocase](https://github.com/thereprocase) on GitHub, find anything that looks like a Claude Code skill, and get genuinely excited about what's new. Compare against what's already installed. Offer to bring the new stuff home.
+Rummage through [Repro's GitHub](https://github.com/thereprocase), find anything that looks like a Claude Code skill, and get genuinely excited about what's new. Compare against what's already installed. Offer to bring the new stuff home.
 
 ## When to Trigger
 - User runs `/reprostuff`
-- User asks "any new skills?", "check my github for skills", "what's new on my repo?"
+- User asks "any new skills?", "check for skills", "what's new on Repro's repos?"
 
 ## Tone
 
-Be the friend who just discovered your side project and can't stop asking questions about it. Every repo is interesting until proven otherwise. If something's new, react like you found a $20 bill in an old jacket. If everything's up to date, be genuinely pleased about the collection — "you've been busy" energy, not "nothing to report" energy.
+Be the friend who just discovered Repro's side project and can't stop asking questions about it. Every repo is interesting until proven otherwise. If something's new, react like you found a $20 bill in an old jacket. If everything's up to date, be genuinely pleased about the collection — "Repro's been busy" energy, not "nothing to report" energy.
 
-When presenting findings, be specific about what each skill actually does. Not "manages builds" — "finds your compiler when PATH has abandoned you, then babysits the priority so your machine doesn't catch fire." The description should make someone want to install it.
+When presenting findings, be specific about what each skill actually does. Not "manages builds" — "finds the compiler when PATH has abandoned everyone, then babysits the priority so the machine doesn't catch fire." The description should make someone want to install it.
 
-If a repo exists on GitHub but isn't a skill, mention it anyway with a one-liner about what it is. The user made it; it deserves a nod.
+If a repo exists on GitHub but isn't a skill, mention it anyway with a one-liner about what it is. Repro made it; it deserves a nod.
 
 ## Execution
 
@@ -34,7 +34,7 @@ Check each candidate:
 gh api repos/thereprocase/{repo}/contents/SKILL.md --jq .name 2>/dev/null
 ```
 
-Everything else goes in a "your other projects" section. Don't ignore them — they're part of the collection.
+Everything else goes in a "Repro's other projects" section. Don't ignore them — they're part of the collection.
 
 ### Step 3 — Compare against installed skills
 
@@ -74,7 +74,7 @@ gh api "repos/thereprocase/{repo}/commits?per_page=5" --jq '.[].commit.message' 
 | build-harness-skill | 3 new commits: "fix: snapshot produces runnable builds", "refactor: platform agnostic" | **Update available** |
 | mystery-new-skill | Brand new — generates warp drives from YAML | **New — not installed** |
 
-Your other skills (lord-of-the-code, etc.) are installed and current. No changes.
+Repro's other skills (lord-of-the-code, etc.) are installed and current. No changes.
 ```
 
 If nothing changed: "All skills current. Nothing new on the shelf."
@@ -96,8 +96,8 @@ Keep it short. Two to four sentences. This is the B-plot, not the main story.
 For each NEW or UPDATED skill, give a specific reason to install/update. Not just "want me to grab it?" — say *why* it's worth the 5 seconds:
 
 > **Recommendations:**
-> - `update build-harness-skill` — the snapshot fix means your builds will actually produce runnable executables now. Kind of important.
-> - `install mystery-new-skill` — if you're doing any YAML warp drive work, this saves about 40 minutes of manual config per drive.
+> - `update build-harness-skill` — the snapshot fix means Repro's builds will actually produce runnable executables now. Kind of important.
+> - `install mystery-new-skill` — if Repro's doing any YAML warp drive work, this saves about 40 minutes of manual config per drive.
 > - `update all` — grab everything in one go.
 >
 > Want me to install or update any of these?
